@@ -26,9 +26,9 @@ class Fun:
         else:
             if "gamer" in message.content.lower():
                 await message.channel.send("Please do not use the word 'gamer' or I will report you and block you")
-        ran=r.randint(1,900)
+        ran=r.randint(1,1000)
         if ran==1:
-            await message.channel.send("Shutup nigga you got the homogay")
+            await message.channel.send("^Are you listening to this retard lmao")
 
     
     @commands.command()
