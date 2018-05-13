@@ -29,7 +29,22 @@ class CogManager:
             except Exception as e:
                 await ctx.send(f"```Python\n{e}```")
                 await ctx.send("Error cog failed to load.")
+
+    @cm.command(name='unload')
+    async def cm_unload(self,ctx,*,rcog):
+        if ctx.author.id != c.ownerID:
+            await ctx.send('Not the bot owner buddy')
+        else:
+            try:
+                if rcog in c.cogs:
+                    self.bot.unload_extension(rcog)
+                    await ctx.send(f"Cog `{rcog}` unloaded succesfully")
+                else:
+                    await ctx.send("That cog does not exist")
+            except Exception as e:
+                await ctx.send(f"```Python\n{e}```")
             
+    
     @cm.command(name="reload")
     async def cm_reload(self,ctx,*,rcog):
         if ctx.author.id != c.ownerID:

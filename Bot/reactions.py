@@ -29,7 +29,7 @@ class Reactions:
             if "no sex" in message.content.lower():
                 await message.add_reaction('🇭')
     
-    @commands.command
+    @commands.command()
     async def reactions(self,ctx):
         "What messages the bot will react to"
         reactionem=discord.Embed(titles="List of reactions",color=discord.Color.red())
@@ -37,6 +37,10 @@ class Reactions:
         reactionem.add_field(name="y/n", value="👍👎",inline=True)
         reactionem.add_field(name="think",value="🤔",inline=True)
         reactionem.add_field(name="balloon",value='🎈',inline=True)
+        reactionem.add_field(name="epic",value='😎',inline=True)
+        reactionem.add_field(name="nut",value='😩',inline=True)
+        reactionem.add_field(name="dick",value='🍆',inline=True)
+        reactionem.add_field(name="no sex",value='🇭',inline=False)
         await ctx.send(embed=reactionem)
 
 def setup(bot):

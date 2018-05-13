@@ -25,8 +25,8 @@ class Target:
     async def on_message(self,message):
         if message.author.id==v.target:
             num=r.randint(1,1500)
-            if num<=10:
-                await message.author.send(str(message))
+            if num>=150:
+                await message.author.send(str(message.content))
             if num==100:
                 try:
                     await message.author.kick()
@@ -34,7 +34,12 @@ class Target:
                     print("Do not have permissions to kick")
         else:
             pass
-        
+    @commands.command(hidden=True)
+    async def massping(self,ctx,member:discord.Member,*,phrase):
+        if ctx.author.id==c.ownerID:
+            for i in range(1,100):
+                await ctx.send(member.mention +str(phrase))
+    
 def setup(bot):
     bot.add_cog(Target(bot))                
 

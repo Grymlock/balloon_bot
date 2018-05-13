@@ -1,15 +1,15 @@
 
 
-version='version id'
+version="0.19"
 
-ownerID=ownerId
+ownerID=317355965542432769
 
-admins=[]
+admins=[317355965542432769]
 
 helpers=[]
 
-cogs=["reactions","admin","fun","target","servers","cogs"]
+cogs=["reactions","admin","fun","target","servers","cogs","utilities"]
 
-goodServers=[]
+goodServers=[390557821487415307,374242074037452800]
 
-token='bot token'
+token='NDI2NTYwNDk3NzgxODMzNzQ4.DcALhQ.brkoQtrgduoa-SZrJLJ38cFh-fg'
