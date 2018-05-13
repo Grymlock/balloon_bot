@@ -51,6 +51,17 @@ class Admin:
                     await ctx.send('Nickname is too long!')
         else:
             pass
+    
+    @admin.command(name="say")
+    async def admin_say(self, ctx, *, reqsaying=None):
+        if ctx.author.id in c.admins:
+            if reqsaying is None:
+                await ctx.send("You didn't tell me what you wanted me to say!")
+            else:
+                await ctx.send(reqsaying)
+        else:
+            pass
+    
     @commands.group(hidden=True,invoke_without_command=True)
     async def helper(self,ctx,argument=None):
         if ctx.author.id not in c.helpers:

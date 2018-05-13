@@ -14,6 +14,8 @@ class Servers:
             pass
         elif message.author.id==message.guild.owner:
             pass
+        elif message.channel==442368353814970368:
+            pass
         else:
             for inv in self.invites:
                 if inv in message.content.lower():
