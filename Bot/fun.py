@@ -57,7 +57,7 @@ class Fun:
                     print(e)
                     pass
         else:
-            await ctx.send("Shut the fuck up you unfunny faggot I hope you fucking die for thinking its funny to rename everybody's nickname to harambe you fucking unironic cunt")
+            await ctx.send("Nice try funny man")
     @commands.command()
     async def reverse(self,ctx):
         "When oops"
