@@ -1,15 +1,15 @@
 
 
-version="0.19"
+version="0.2"
 
-ownerID=317355965542432769
+ownerID=ownerID
 
-admins=[317355965542432769]
+admins=[]
 
 helpers=[]
 
 cogs=["reactions","admin","fun","target","servers","cogs","utilities"]
 
-goodServers=[390557821487415307,374242074037452800]
+goodServers=[]
 
-token='NDI2NTYwNDk3NzgxODMzNzQ4.DcALhQ.brkoQtrgduoa-SZrJLJ38cFh-fg'
+token=bottoken
